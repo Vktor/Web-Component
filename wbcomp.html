@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Component TPI 2018</title>
     <script src="module_getPath.js"></script>
-<!--    <script src="webcomp.js"></script> 
+    
 
-<script>
-    obtenerPath('https://jsonplaceholder.typicode.com/users');
-    cumpliendoPromesa('name');
-</script>
+    <script>
+        //el path del GET del REST
+        obtenerPath('https://jsonplaceholder.typicode.com/users');
+        // Para listar los nombres de marcas o cosas a buscar, si el json es lineal se puede dejar vacio, si es matriz especificar el campo a listar
+        //para mas detalle leer comentarios en module_getPath.js
+        cumpliendoPromesa('name');
+    </script>
+
+<script src="wc_barra.js"></script>
+
+<!--    
+    <script src="webcomp.js"></script> 
+    <script src="wc_barraBusqueda.js"></script>
 -->
-<script src="wc_barraBusqueda.js"></script>
 </head>
 <body>
       <webcomp-busqueda></webcomp-busqueda>

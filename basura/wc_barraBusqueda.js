@@ -93,7 +93,7 @@ class Busqueda extends HTMLElement {
               people_to_show = [];
               autocomplete_results.innerHTML = '';
             }
-          }
+        }
         </script>
 
 

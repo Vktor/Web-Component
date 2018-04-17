@@ -32,7 +32,7 @@ function cumpliendoPromesa(extra){ //extra en caso de ser matriz
 obtenerPath('https://jsonplaceholder.typicode.com/users');
 cumpliendoPromesa('name'); //en este caso se busca el valor "name" que esta dentro de cada objeto en el array 
 
-ESTRUCTURA DEL ARREGLO
+ESTRUCTURA DEL JSON (ARREGLO)
   {
     "id": 1,
     "name": "Leanne Graham", <-- Se genera la lista de nombres y se guarda en soloArreglo
