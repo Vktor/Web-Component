@@ -29,27 +29,27 @@ class Busqueda extends HTMLElement {
     };
  
  // events
- 
- input.onkeyup = function(e) {
-   input_val = this.value; // updates the variable on each ocurrence
- 
-   if (input_val.length > 0) {
-     var people_to_show = [];
- 
-     autocomplete_results = document.getElementById("autocomplete-results");
-     autocomplete_results.innerHTML = '';
-     people_to_show = autocomplete(input_val);
-     
-     for (i = 0; i < people_to_show.length; i++) {
-       autocomplete_results.innerHTML += '<li>' + people_to_show[i] + '</li>';
- 
-     }
-     autocomplete_results.style.display = 'block';
-   } else {
-     people_to_show = [];
-     autocomplete_results.innerHTML = '';
-   }
- }
+ evento(){
+        input.onkeyup = function(e) {
+        input_val = this.value; // updates the variable on each ocurrence
+            if (input_val.length > 0) {
+                var people_to_show = [];
+            
+                autocomplete_results = document.getElementById("autocomplete-results");
+                autocomplete_results.innerHTML = '';
+                people_to_show = autocomplete(input_val);
+                
+                for (i = 0; i < people_to_show.length; i++) {
+                autocomplete_results.innerHTML += '<li>' + people_to_show[i] + '</li>';
+            
+                }
+                autocomplete_results.style.display = 'block';
+            } else {
+                people_to_show = [];
+                autocomplete_results.innerHTML = '';
+            }
+        }
+    }
 }
 
 
